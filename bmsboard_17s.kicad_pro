@@ -606,6 +606,14 @@
     [
       "128e428a-1475-4bc2-b590-cd457ccc2d2e",
       "AFE Module"
+    ],
+    [
+      "9405bd40-8890-47bd-a302-177d902533bf",
+      "MCU Module"
+    ],
+    [
+      "7f48a447-db55-4097-9914-027675e28363",
+      "Sensors Module"
     ]
   ],
   "text_variables": {}

@@ -103,6 +103,212 @@
 			)
 		)
 	)
+	(sheet
+		(at 50.8 97.79)
+		(size 30.48 45.72)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f48a447-db55-4097-9914-027675e28363")
+		(property "Sheetname" "Sensors Module"
+			(at 50.8 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 50.8 144.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "WDET_EN" input
+			(at 50.8 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1b78386c-fa6e-4a47-8e65-243e8c0e1dc8")
+		)
+		(pin "SDA" bidirectional
+			(at 50.8 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "da732d12-f10d-46e3-8d54-bf214d041fd7")
+		)
+		(pin "SCL" bidirectional
+			(at 50.8 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f46a9da2-85c1-426d-9be5-0dd77e71c439")
+		)
+		(pin "WDET_PWM" input
+			(at 50.8 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7a426d55-10d2-4cd8-8679-90fb0afe92eb")
+		)
+		(pin "WDET_OUT" output
+			(at 81.28 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d9c11e2e-d952-4bc6-be02-8c3289bd67bf")
+		)
+		(pin "RTEMP_OUT2" output
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3145544f-6d92-4a07-9442-896f6e8ec3bc")
+		)
+		(pin "RTEMP_OUT3" output
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "48f24109-18cf-4cf6-9555-0b913005d49a")
+		)
+		(pin "RTEMP_OUT0" output
+			(at 81.28 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ff9b2a18-b669-4e98-b172-ee129b1a9ce8")
+		)
+		(pin "RTEMP_OUT1" output
+			(at 81.28 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "df0ff6a1-206f-465c-be48-8b0dc1fd85b0")
+		)
+		(pin "RTEMP_EN" input
+			(at 50.8 125.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "06d7b090-a551-468a-bceb-3bb100606e63")
+		)
+		(pin "RTEMP_R2" input
+			(at 50.8 133.35 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "490a65f2-d4de-4f9d-8d60-a5316837097d")
+		)
+		(pin "RTEMP_R0" input
+			(at 50.8 128.27 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8e2fb578-a951-4e2b-9cb0-0a79c0492303")
+		)
+		(pin "RTEMP_R1" input
+			(at 50.8 130.81 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3bb64440-979a-4aeb-8c67-bfa67f6574e7")
+		)
+		(instances
+			(project "bmsboard_17s"
+				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 52.07)
+		(size 27.94 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9405bd40-8890-47bd-a302-177d902533bf")
+		(property "Sheetname" "MCU Module"
+			(at 50.8 51.3584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 50.8 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "bmsboard_17s"
+				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4"
+					(page "3")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

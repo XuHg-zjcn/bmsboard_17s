@@ -2376,12 +2376,12 @@
 				)
 			)
 		)
-		(symbol "project_symbols:PB7170"
+		(symbol "project_symbols:PB7170P48"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -10.16 34.29 0)
+				(at -1.016 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2389,15 +2389,15 @@
 					(justify left)
 				)
 			)
-			(property "Value" "PB7170"
-				(at 0 0 0)
+			(property "Value" "PB7170P48"
+				(at 0 -10.668 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm_ThermalVias"
+			(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
 				(at 22.86 -34.29 0)
 				(effects
 					(font
@@ -2406,7 +2406,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq76940.pdf"
+			(property "Datasheet" "http://www.pengshenchip.com/ProductsStd_253.html"
 				(at 17.78 29.21 0)
 				(effects
 					(font
@@ -2442,7 +2442,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PB7170_0_1"
+			(symbol "PB7170P48_0_1"
 				(rectangle
 					(start -10.16 33.02)
 					(end 10.16 -33.02)
@@ -2455,7 +2455,7 @@
 					)
 				)
 			)
-			(symbol "PB7170_1_0"
+			(symbol "PB7170P48_1_0"
 				(pin power_in line
 					(at 5.08 35.56 270)
 					(length 2.54)
@@ -2835,7 +2835,7 @@
 					)
 				)
 			)
-			(symbol "PB7170_1_1"
+			(symbol "PB7170P48_1_1"
 				(pin power_in line
 					(at 0 -35.56 90)
 					(length 2.54)
@@ -17478,7 +17478,7 @@
 		)
 	)
 	(symbol
-		(lib_id "project_symbols:PB7170")
+		(lib_id "project_symbols:PB7170P48")
 		(at 101.6 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17487,7 +17487,7 @@
 		(dnp no)
 		(uuid "c8a38827-eefb-4cdf-b0ba-ae8c556fde9f")
 		(property "Reference" "U1"
-			(at 108.966 57.15 0)
+			(at 100.584 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17495,16 +17495,15 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PB7170"
-			(at 97.79 91.44 0)
+		(property "Value" "PB7170P48"
+			(at 101.6 102.108 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm_ThermalVias"
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
 			(at 124.46 125.73 0)
 			(effects
 				(font
@@ -17513,7 +17512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq76940.pdf"
+		(property "Datasheet" "http://www.pengshenchip.com/ProductsStd_253.html"
 			(at 119.38 62.23 0)
 			(effects
 				(font

@@ -5,6 +5,145 @@
 	(uuid "4ac7729e-a187-41c0-a6b0-bebe2761d893")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1197,7 +1336,7 @@
 				)
 			)
 		)
-		(symbol "Device:Q_NPN_BCE"
+		(symbol "Device:Q_NPN_BEC"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -1212,7 +1351,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BCE"
+			(property "Value" "Q_NPN_BEC"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -1239,7 +1378,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, base/collector/emitter"
+			(property "Description" "NPN transistor, base/emitter/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1257,7 +1396,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_BCE_0_1"
+			(symbol "Q_NPN_BEC_0_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -1318,7 +1457,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BCE_1_1"
+			(symbol "Q_NPN_BEC_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.715)
@@ -1338,9 +1477,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "C"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1356,9 +1495,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "E"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3852,12 +3991,6 @@
 		(color 0 0 0 0)
 		(uuid "f06b7587-9a78-4f34-bbef-4fbe542697d6")
 	)
-	(junction
-		(at 220.98 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb7a48dd-befb-4c86-908d-c38c3ce3d70e")
-	)
 	(no_connect
 		(at 66.04 99.06)
 		(uuid "b2f1e8be-ee51-4e62-89eb-430b7d7c506f")
@@ -3931,6 +4064,16 @@
 			(type default)
 		)
 		(uuid "062bb39b-48ce-40be-b9d5-cd93b67f4905")
+	)
+	(wire
+		(pts
+			(xy 195.58 35.56) (xy 195.58 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0715d58d-70a4-41ff-869e-905b64e228de")
 	)
 	(wire
 		(pts
@@ -4121,6 +4264,16 @@
 			(type default)
 		)
 		(uuid "224bf0b8-ed73-411f-afcb-1406c8f1bf29")
+	)
+	(wire
+		(pts
+			(xy 195.58 39.37) (xy 195.58 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d52aa2-e118-4768-9281-cde8a4236dc3")
 	)
 	(wire
 		(pts
@@ -5024,7 +5177,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 93.98) (xy 220.98 93.98)
+			(xy 212.09 95.25) (xy 222.25 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5041,16 +5194,6 @@
 			(type default)
 		)
 		(uuid "adde595e-8147-46d1-97b5-411aa9359637")
-	)
-	(wire
-		(pts
-			(xy 220.98 93.98) (xy 222.25 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afd130b8-bfcb-41d7-9ad1-f209f2d72ffb")
 	)
 	(wire
 		(pts
@@ -5134,6 +5277,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 40.64) (xy 195.58 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb0e5ff0-1dc1-4a26-847d-2d7f1f4a642c")
+	)
+	(wire
+		(pts
 			(xy 82.55 156.21) (xy 83.82 156.21)
 		)
 		(stroke
@@ -5151,6 +5304,16 @@
 			(type default)
 		)
 		(uuid "bc15347f-5f94-4cfd-87bd-1c6a2e8f6a4f")
+	)
+	(wire
+		(pts
+			(xy 212.09 95.25) (xy 212.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be60a84b-3b5b-4d8b-bef6-6b5dc3985033")
 	)
 	(wire
 		(pts
@@ -5384,7 +5547,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 93.98) (xy 222.25 99.06)
+			(xy 222.25 95.25) (xy 222.25 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5441,6 +5604,16 @@
 			(type default)
 		)
 		(uuid "f1aa79db-8b8e-4d73-9242-985a6d9257be")
+	)
+	(wire
+		(pts
+			(xy 194.31 35.56) (xy 195.58 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f239b3a9-f3f5-46ae-a388-5300b8909c3e")
 	)
 	(wire
 		(pts
@@ -6180,7 +6353,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 44.958 191.7121 0)
 			(effects
 				(font
@@ -6320,7 +6493,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 222.758 87.5721 0)
 			(effects
 				(font
@@ -6329,7 +6502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 219.202 86.36 90)
 			(effects
 				(font
@@ -6929,7 +7102,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "4.7k"
 			(at 203.2 139.5038 90)
 			(effects
 				(font
@@ -6937,7 +7110,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.2 144.018 90)
 			(effects
 				(font
@@ -7156,7 +7329,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "4.7k"
 			(at 203.2 143.3138 90)
 			(effects
 				(font
@@ -7164,7 +7337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.2 147.828 90)
 			(effects
 				(font
@@ -7201,6 +7374,76 @@
 			(project "bmsboard_17s"
 				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
 					(reference "R63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 200.66 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c8df4f0-9f46-4441-a268-7c36ec176777")
+		(property "Reference" "J5"
+			(at 202.692 36.8878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 202.692 39.3121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "31d0f691-81a8-4926-98ee-5e8a51e7fcd1")
+		)
+		(pin "1"
+			(uuid "a14f3d10-b456-4b77-9ccf-54910c1dd384")
+		)
+		(instances
+			(project ""
+				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -7277,7 +7520,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 213.36 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7295,7 +7538,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "Q_NPN_BEC"
 			(at 218.2114 151.0721 0)
 			(effects
 				(font
@@ -7304,7 +7547,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 218.44 147.32 0)
 			(effects
 				(font
@@ -7322,7 +7565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 213.36 149.86 0)
 			(effects
 				(font
@@ -7765,7 +8008,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 208.28 96.3238 90)
 			(effects
 				(font
@@ -7773,7 +8016,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 208.28 100.838 90)
 			(effects
 				(font
@@ -8018,7 +8261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 240.03 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8036,7 +8279,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "Q_NPN_BEC"
 			(at 244.8814 151.0721 0)
 			(effects
 				(font
@@ -8045,7 +8288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 245.11 147.32 0)
 			(effects
 				(font
@@ -8063,7 +8306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 240.03 149.86 0)
 			(effects
 				(font
@@ -8185,7 +8428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 245.491 92.71 0)
 			(effects
 				(font
@@ -8246,7 +8489,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "150"
 			(at 230.378 140.9121 0)
 			(effects
 				(font
@@ -8255,7 +8498,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 226.822 139.7 90)
 			(effects
 				(font
@@ -8316,7 +8559,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 25.908 191.7121 0)
 			(effects
 				(font
@@ -8523,7 +8766,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "150"
 			(at 217.678 140.9121 0)
 			(effects
 				(font
@@ -8532,7 +8775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 214.122 139.7 90)
 			(effects
 				(font
@@ -8592,7 +8835,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "4.7k"
 			(at 203.2 147.1238 90)
 			(effects
 				(font
@@ -8600,7 +8843,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 203.2 151.638 90)
 			(effects
 				(font
@@ -8661,7 +8904,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 28.448 189.1721 0)
 			(effects
 				(font
@@ -8869,7 +9112,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 208.28 91.2438 90)
 			(effects
 				(font
@@ -8877,7 +9120,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 208.28 95.758 90)
 			(effects
 				(font
@@ -8938,7 +9181,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "150"
 			(at 244.348 140.9121 0)
 			(effects
 				(font
@@ -8947,7 +9190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 240.792 139.7 90)
 			(effects
 				(font
@@ -8990,7 +9233,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 218.44 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9008,7 +9251,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "Q_NPN_BEC"
 			(at 223.2914 100.2721 0)
 			(effects
 				(font
@@ -9017,7 +9260,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 223.52 96.52 0)
 			(effects
 				(font
@@ -9035,7 +9278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 218.44 99.06 0)
 			(effects
 				(font
@@ -9063,7 +9306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 233.68 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9081,7 +9324,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "Q_NPN_BEC"
 			(at 238.5314 100.2721 0)
 			(effects
 				(font
@@ -9090,7 +9333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 238.76 96.52 0)
 			(effects
 				(font
@@ -9108,7 +9351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 233.68 99.06 0)
 			(effects
 				(font
@@ -9220,7 +9463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 237.998 87.5721 0)
 			(effects
 				(font
@@ -9229,7 +9472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 234.442 86.36 90)
 			(effects
 				(font
@@ -9338,7 +9581,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 226.06 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9356,7 +9599,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
+		(property "Value" "Q_NPN_BEC"
 			(at 230.9114 151.0721 0)
 			(effects
 				(font
@@ -9365,7 +9608,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 231.14 147.32 0)
 			(effects
 				(font
@@ -9383,7 +9626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 226.06 149.86 0)
 			(effects
 				(font
@@ -9498,7 +9741,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 47.498 189.1721 0)
 			(effects
 				(font

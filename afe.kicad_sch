@@ -1481,7 +1481,7 @@
 				)
 			)
 		)
-		(symbol "Device:Q_NPN_BCE"
+		(symbol "Device:Q_NPN_BEC"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -1496,7 +1496,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BCE"
+			(property "Value" "Q_NPN_BEC"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -1523,7 +1523,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, base/collector/emitter"
+			(property "Description" "NPN transistor, base/emitter/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1541,7 +1541,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_BCE_0_1"
+			(symbol "Q_NPN_BEC_0_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -1602,7 +1602,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BCE_1_1"
+			(symbol "Q_NPN_BEC_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 5.715)
@@ -1622,9 +1622,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "C"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1640,9 +1640,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "E"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14319,7 +14319,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NPN_BCE")
+		(lib_id "Device:Q_NPN_BEC")
 		(at 53.34 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14336,8 +14336,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BCE"
-			(at 58.1914 36.7721 0)
+		(property "Value" "Q_NPN_BEC"
+			(at 58.42 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14363,7 +14363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "NPN transistor, base/collector/emitter"
+		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 53.34 35.56 0)
 			(effects
 				(font

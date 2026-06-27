@@ -9438,16 +9438,6 @@
 		)
 		(uuid "3359f144-4d35-4473-b7a4-f972db7623f6")
 	)
-	(label "MISO"
-		(at 71.12 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "346ad6a2-4832-4211-9da0-0f873cb61bf4")
-	)
 	(label "BAT17"
 		(at 273.05 30.48 0)
 		(effects
@@ -9738,16 +9728,6 @@
 		)
 		(uuid "71f4fcb9-06ad-4955-b86b-f26f2251b4f4")
 	)
-	(label "CS_AFE"
-		(at 71.12 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "72870d99-4bfd-4f91-a839-983ddb186f75")
-	)
 	(label "S4"
 		(at 115.57 128.27 0)
 		(effects
@@ -9817,16 +9797,6 @@
 			(justify left bottom)
 		)
 		(uuid "80d808ab-3736-4023-bcc0-3773c1eccc60")
-	)
-	(label "SCLK"
-		(at 71.12 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "81b21180-02e7-4936-9305-7e3cce3fc58c")
 	)
 	(label "DSG"
 		(at 53.34 147.32 180)
@@ -9958,16 +9928,6 @@
 		)
 		(uuid "9bf55412-66e3-4569-bd55-466cf4b6fbe9")
 	)
-	(label "GPIO2"
-		(at 71.12 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9c5c6b1d-c4d4-470b-ac2a-bdb5bd6ef142")
-	)
 	(label "SRN"
 		(at 86.36 146.05 180)
 		(effects
@@ -10017,16 +9977,6 @@
 			(justify right bottom)
 		)
 		(uuid "a6cbc6f9-5476-46a3-8b7b-f2bdd573e065")
-	)
-	(label "MOSI"
-		(at 71.12 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "acbae002-9b8e-42c1-984a-75e5eed35965")
 	)
 	(label "S10"
 		(at 115.57 97.79 0)
@@ -10267,16 +10217,6 @@
 			(justify left bottom)
 		)
 		(uuid "d43e2c87-33e6-4be2-91aa-b812b59d0a42")
-	)
-	(label "GPIO1"
-		(at 71.12 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d48f4b11-e693-4313-bbb9-70992ad032fa")
 	)
 	(label "SW_MID"
 		(at 66.04 167.64 90)
@@ -10557,6 +10497,72 @@
 			(justify right bottom)
 		)
 		(uuid "fef737cb-7082-48c9-846c-f5480469eeb5")
+	)
+	(hierarchical_label "MOSI"
+		(shape input)
+		(at 71.12 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "010d7393-5081-4b27-b79c-7ee9102a515e")
+	)
+	(hierarchical_label "GPIO1"
+		(shape bidirectional)
+		(at 71.12 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2127b768-4dc5-4e3b-beea-d5b528fca8b7")
+	)
+	(hierarchical_label "GPIO2"
+		(shape bidirectional)
+		(at 71.12 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3787d3e2-9c9f-4a42-997c-64b01f326da4")
+	)
+	(hierarchical_label "SCLK"
+		(shape input)
+		(at 71.12 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "750256ee-9b23-4c5e-9205-84e0e66ba577")
+	)
+	(hierarchical_label "MISO"
+		(shape output)
+		(at 71.12 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "912a5865-b993-4a66-9be3-e3b8fce838ee")
+	)
+	(hierarchical_label "CS_AFE"
+		(shape input)
+		(at 71.12 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c61ac9e0-79cc-4ad2-b352-ef1442c5e72f")
 	)
 	(symbol
 		(lib_id "Device:R")

@@ -5291,126 +5291,6 @@
 				)
 			)
 		)
-		(symbol "power:VDD"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 109.22 74.93)
@@ -8376,6 +8256,16 @@
 		)
 		(uuid "3d5bf9c4-fc1b-44e4-805d-a7b9503fde8b")
 	)
+	(text "TODO: 添加一个电子墨水屏接口，用于显示电量等信息"
+		(exclude_from_sim no)
+		(at 128.016 173.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7ba68de3-9d75-47d0-aeeb-d54b9a63990f")
+	)
 	(text "TIM3_CH1"
 		(exclude_from_sim no)
 		(at 112.268 95.758 0)
@@ -8817,17 +8707,6 @@
 		)
 		(uuid "11f378d8-ed3d-43af-81a1-a6117aff997e")
 	)
-	(hierarchical_label "WDET_PWM"
-		(shape output)
-		(at 64.77 111.76 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1572f3c9-77c4-40b4-a496-a07982650289")
-	)
 	(hierarchical_label "SDA2"
 		(shape input)
 		(at 21.59 194.31 180)
@@ -8893,17 +8772,6 @@
 			(justify left)
 		)
 		(uuid "96b2c79a-db49-4e9a-a13b-534e7238219e")
-	)
-	(hierarchical_label "WDET_EN"
-		(shape output)
-		(at 64.77 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b18cc24f-a5e6-4831-b190-f068f259c285")
 	)
 	(hierarchical_label "SCLK"
 		(shape output)
@@ -9718,6 +9586,72 @@
 			(project "bmsboard_17s"
 				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
 					(reference "#PWR30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 83.82 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1879e15a-8961-4907-8c6c-9348e352161d")
+		(property "Reference" "#PWR58"
+			(at 83.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 83.82 69.5269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 83.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa208095-f37b-4f96-a009-96c1e14c8ea6")
+		)
+		(instances
+			(project "bmsboard_17s"
+				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
+					(reference "#PWR58")
 					(unit 1)
 				)
 			)
@@ -11651,72 +11585,6 @@
 			(project "bmsboard_17s"
 				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
 					(reference "D33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 83.82 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64dee617-da8a-4a18-95e8-cbb76513ff48")
-		(property "Reference" "#PWR17"
-			(at 83.82 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 83.82 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "271111ca-58bf-463a-8a92-33c7aa8b994e")
-		)
-		(instances
-			(project "bmsboard_17s"
-				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
-					(reference "#PWR17")
 					(unit 1)
 				)
 			)
@@ -13716,6 +13584,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 109.22 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab65bc70-d45f-4cac-b9d0-4fa06ab7fe11")
+		(property "Reference" "#PWR59"
+			(at 109.22 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 109.22 61.9069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 109.22 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0314ace1-4f06-47d7-9f58-5c3a6e9c2470")
+		)
+		(instances
+			(project "bmsboard_17s"
+				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
+					(reference "#PWR59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NPN_BEC")
 		(at 233.68 99.06 0)
 		(unit 1)
@@ -14965,72 +14899,6 @@
 			(project "bmsboard_17s"
 				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
 					(reference "FB4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 109.22 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee6972da-3bcd-4e5f-a52f-c8c127d03977")
-		(property "Reference" "#PWR18"
-			(at 109.22 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 109.22 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a5c9a5b5-5b16-475f-bc06-36fb01bb142e")
-		)
-		(instances
-			(project "bmsboard_17s"
-				(path "/8b3bc3d6-55f6-430e-b34e-509c7be416f4/9405bd40-8890-47bd-a302-177d902533bf"
-					(reference "#PWR18")
 					(unit 1)
 				)
 			)

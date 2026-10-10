@@ -8698,7 +8698,7 @@
 	)
 	(hierarchical_label "CS_BLE"
 		(shape output)
-		(at 100.33 119.38 0)
+		(at 100.33 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8797,7 +8797,7 @@
 	)
 	(hierarchical_label "CS_AFE"
 		(shape output)
-		(at 100.33 116.84 0)
+		(at 100.33 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
